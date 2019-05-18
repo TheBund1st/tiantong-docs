@@ -1,0 +1,15 @@
+@startuml
+interface ProviderSpecificCreateOnlinePaymentGateway <<Output Port>> {
+   {method} create(onlinePayment: OnlinePayment, request: ProviderSpecificCreateOnlinePaymentRequest): ProviderSpecificLaunchOnlinePaymentRequest
+}
+
+class Merchant {
+   {field} id
+}
+
+class Payable {
+   {field} appId
+   {field} objectId
+}
+
+@enduml

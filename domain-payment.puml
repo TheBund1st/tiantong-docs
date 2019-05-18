@@ -1,0 +1,13 @@
+@startuml
+class Payable {
+   {field} appId
+   {field} objectId
+}
+
+class OnlinePaymentSucceededEvent <<Event>> {
+    {field} onlinePaymentId: OnlinePaymentIdentifier
+    {field} payable: Payable
+    {field} amount: MonetaryAmount
+}
+
+@enduml

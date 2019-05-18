@@ -1,0 +1,9 @@
+@startuml
+[*] --> PENDING : created
+PENDING --> SUCCESS : success result received/pulled
+PENDING --> FAILURE : failure result received/pulled
+PENDING --> CLOSED : closed result pulled
+SUCCESS --> [*]
+FAILURE --> [*]
+CLOSED --> [*]
+@enduml
